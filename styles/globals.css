@@ -31,6 +31,7 @@ body {
   font-size: calc(var(--pixel-size) * 2.25);
   line-height: calc(var(--pixel-size) * 3.5);
   overflow: hidden;
+  height:0;
 }
 
 a {

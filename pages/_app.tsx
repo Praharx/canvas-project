@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="w-[">
+    <div className="w-[50vh] h-[50vh]">
       <Component {...pageProps} />
     </div>
   );

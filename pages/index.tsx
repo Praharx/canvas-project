@@ -39,7 +39,7 @@ export default function Home() {
         <h1>Hello world</h1>
       </header>
       <main>
-          <div className="border border-red-3 h-[50vh] w-[50vw]">
+          <div className="">
             Attention is a drug
           </div>
       </main>
