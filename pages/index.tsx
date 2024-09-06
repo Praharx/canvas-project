@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="favicon.ico" />
         <link
           rel="apple-touch-icon"
-          sizes="180x180"
+          sizes="90x100"
           href="apple-touch-icon.png"
         />
         <link rel="icon" type="image/png" sizes="32x32" href="favicon32.png" />
@@ -36,11 +36,12 @@ export default function Home() {
         <meta property="dscvr:canvas:version" content="vNext" />
       </Head>
       <header>
-        <h1>2048</h1>
-        <Score />
+        <h1>Hello world</h1>
       </header>
       <main>
-        <Board />
+          <div className="border border-red-3 h-[50vh] w-[50vw]">
+            Attention is a drug
+          </div>
       </main>
     </div>
   );
