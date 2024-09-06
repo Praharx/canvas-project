@@ -1,8 +1,8 @@
 {
-  "name": "2048-in-react",
+  "name": "win-me",
   "version": "0.2.0",
-  "homepage": "https://mateuszsokola.github.io/2048-in-react/",
-  "author": "Mateusz Sokola (https://mateu.sh/)",
+  "homepage": ".",
+  "author": "krishh16 x Praharx",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -15,7 +15,13 @@
     "test-coverage": "jest --coverage --verbose"
   },
   "dependencies": {
+    "@dialectlabs/blinks": "^0.9.3",
     "@dscvr-one/canvas-client-sdk": "^1.0.5",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
+    "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/web3.js": "^1.95.3",
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
@@ -35,8 +41,11 @@
     "@types/jest": "29.5.11",
     "@types/lodash": "4.14.202",
     "@typescript-eslint/typescript-estree": "6.15.0",
+    "autoprefixer": "^10.4.20",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
-    "prettier": "3.1.1"
+    "postcss": "^8.4.45",
+    "prettier": "3.1.1",
+    "tailwindcss": "^3.4.10"
   }
 }

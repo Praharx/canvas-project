@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .tile {
   position: absolute;
   width: calc(var(--pixel-size) * 8);

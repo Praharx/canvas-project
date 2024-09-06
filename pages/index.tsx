@@ -5,7 +5,10 @@ import Score from "@/components/score";
 import styles from "@/styles/index.module.css";
 import { CanvasClient } from "@dscvr-one/canvas-client-sdk";
 import { useEffect } from "react";
-
+import App from "./blink"
+import AppWalletProvider from "@/components/AppWalletAdapter";
+import RetroArcadeNavbar from "@/components/Navbar";
+import CustomTabbedSection from "@/components/Tabs";
 export default function Home() {
   //is iframed
 
@@ -16,12 +19,12 @@ export default function Home() {
   }, []); // empty dependencies array means "run this once on first mount"
 
   return (
-    <div className={styles.twenty48}>
+    <div className="w-[100vw]">
       <Head>
-        <title>Play 2048</title>
+        <title>Who'll win</title>
         <meta
-          name="description"
-          content="Canvas 2048."
+          name="A place to argue on the most triggering opinions out there"
+          content="Argue! Argue and Argue."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="favicon.ico" />
@@ -30,19 +33,18 @@ export default function Home() {
           sizes="90x100"
           href="apple-touch-icon.png"
         />
+
         <link rel="icon" type="image/png" sizes="32x32" href="favicon32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="favicon16.png" />
         <meta property="og:image" content="/cover.png" />
         <meta property="dscvr:canvas:version" content="vNext" />
       </Head>
-      <header>
-        <h1>Hello world</h1>
-      </header>
-      <main>
-          <div className="">
-            Attention is a drug
-          </div>
+      <AppWalletProvider>
+      <main className="w-full flex flex-col items-center mx-auto">
+          <RetroArcadeNavbar/>
+          <CustomTabbedSection/>
       </main>
+      </AppWalletProvider>
     </div>
   );
 }
