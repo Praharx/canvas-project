@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="w-[100vw]">
       <Head>
-        <title>Who'll win</title>
+        <title>Who w&apos;ll win</title>
         <meta
           name="A place to argue on the most triggering opinions out there"
           content="Argue! Argue and Argue."
