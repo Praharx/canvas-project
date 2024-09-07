@@ -8,7 +8,7 @@ import "../styles/blink.module.css"
 const App = () => {
   const [action, setAction] = useState<Action | null>(null);
 
-  const actionApiUrl = 'https://dial.to/?action=solana-action%3Ahttps%3A%2F%2Fmain.bounty-spread.pages.dev%2Fapi%2Fapp%2Factions%3Fid%3Db9ec451d-1f2a-421b-a39b-294cbe7bdd95&cluster=devnet';
+  const actionApiUrl = 'https://dial.to/?action=solana-action:https://matchups.fun/api/actions/fight';
   const { adapter } = useActionSolanaWalletAdapter('https://api.devnet.solana.com');
   const { action: something } = useAction({url: actionApiUrl, adapter});
 
